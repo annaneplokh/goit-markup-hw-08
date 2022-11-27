@@ -1,0 +1,45 @@
+.advantage-bgcolor {
+    background-color: $white-bg-color;
+}
+
+.list-advantage__icon {
+    width: 270px;
+    height: 120px;
+    background-color: $team-bg-color;
+    border-radius: 4px;
+    padding: 25px 102px;
+    margin-bottom: 30px;
+}
+
+.list-advantage {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.list-advantage__item {
+    width: 270px;
+    margin-right: 30px;
+
+    &:last-child {
+            margin-right: 0px;
+        }
+}
+
+.list-advantage__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.list-advantage__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}

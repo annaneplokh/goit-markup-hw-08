@@ -10,7 +10,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
 
@@ -30,7 +31,7 @@
 
                 <ul class="list site-connect">
                    
-                        <li class="site-nav__item">
+                        <li class="site-connect__item">
 
                             <a href="mailto:info@devstudio.com" class="site-connect__link">
                                 <svg class="site-connect__icon" width="16" height="12">
@@ -39,7 +40,7 @@
                                 info@devstudio.com</a>
                         </li>
 
-                        <li class="site-nav__item">
+                        <li class="site-connect__item">
 
                             <a href="tel:+380961111111" class="site-connect__link">
                                 <svg class="site-connect__icon" width="10" height="16">
@@ -71,47 +72,46 @@
                         <svg class="modal-button__icon">
                             <use href="./images/icons.svg#icon-closeblack"></use>
                         </svg>
-
                        
                     </button>
 
-                <h1 class="modal-title">Залиште свої дані, ми вам передзвонимо</h1>
-                <form class="form-modal">
-                   
-                            <label for="name" class="form-modal__label">Ім'я</label>
-                            <div class="form-modal__box">
-                                <input autofocus type="name" id="name" name="name" class="form-modal__input form-modal__input--effect" >
-                                <svg class="icon-personblack">
-                                    <use href="./images/icons.svg#icon-personblack" ></use>
-                                </svg>
-                            </div>
-                       
-                            <label for="tel" class="form-modal__label">Телефон</label>
-                            <div class="form-modal__box">
-                                <input type="tel" id="tel" name="tel" class="form-modal__input form-modal__input--effect">
-                                <svg class="icon-phoneblack">
-                                    <use href="./images/icons.svg#icon-phoneblack"></use>
-                                </svg>
-                            </div>
-                       
-                            <label for="mail" class="form-modal__label">Пошта</label>
-                            <div class="form-modal__box">
-                                <input type="mail" id="mail" name="mail" class="form-modal__input form-modal__input--effect">
-                                <svg class="icon-emailblack">
-                                    <use href="./images/icons.svg#icon-emailblack"></use>
-                                </svg>
-                            </div>
+                    <h1 class="modal-title">Залиште свої дані, ми вам передзвонимо</h1>
+                    <form class="form-modal">
+                    
+                                <label for="name" class="form-modal__label">Ім'я</label>
+                                <div class="form-modal__box">
+                                    <input autofocus type="name" id="name" name="name" class="form-modal__input form-modal__input--effect" >
+                                    <svg class="icon-personblack">
+                                        <use href="./images/icons.svg#icon-personblack" ></use>
+                                    </svg>
+                                </div>
                         
-                            <label for="comment" class="form-modal__label">Коментар</label>
-                            <textarea name="comment" id="" rows="5" placeholder="Введіть текст" class="modal-textarea"></textarea>
+                                <label for="tel" class="form-modal__label">Телефон</label>
+                                <div class="form-modal__box">
+                                    <input type="tel" id="tel" name="tel" class="form-modal__input form-modal__input--effect">
+                                    <svg class="icon-phoneblack">
+                                        <use href="./images/icons.svg#icon-phoneblack"></use>
+                                    </svg>
+                                </div>
                         
-                            <label class="checkbox-label">
-                                <input class="checkbox-label__input" type="checkbox" name="checkbox">
-                                <span class="checkbox-label__checked"></span>
-                                <p class="checkbox-label__text">Погоджуюся з розсилкою та приймаю <a href=""class="checkbox-label__link"> Умови договору</a></p>
-                            </label>
-                        
-                </form>
+                                <label for="mail" class="form-modal__label">Пошта</label>
+                                <div class="form-modal__box">
+                                    <input type="mail" id="mail" name="mail" class="form-modal__input form-modal__input--effect">
+                                    <svg class="icon-emailblack">
+                                        <use href="./images/icons.svg#icon-emailblack"></use>
+                                    </svg>
+                                </div>
+                            
+                                <label for="comment" class="form-modal__label">Коментар</label>
+                                <textarea name="comment" id="" rows="5" placeholder="Введіть текст" class="modal-textarea"></textarea>
+                            
+                                <label class="checkbox-label">
+                                    <input class="checkbox-label__input" type="checkbox" name="checkbox">
+                                    <span class="checkbox-label__checked"></span>
+                                    <p class="checkbox-label__text">Погоджуюся з розсилкою та приймаю <a href=""class="checkbox-label__link"> Умови договору</a></p>
+                                </label>
+                            
+                    </form>
 
 
 
@@ -125,7 +125,7 @@
         </section>
 
         <!-- переваги -->
-        <section class="section advantage--bgcolor">   
+        <section class="section advantage-bgcolor">   
             <div class="container">
                 <div class=" advantage">
                             
@@ -169,11 +169,14 @@
                     </ul>
                             
                 </div>
+            </div>
+        </section>
 
         <!-- Чим ми займаємося -->
-                <div class=" deal">
-                    
-                    <h2 class=" deal__title ">Чим ми займаємося</h2>
+        <section class="section deal">
+            <div class="container">
+                                    
+                    <h2 class=" deal-title ">Чим ми займаємося</h2>
                     <ul class="list list-deal">
                         <li class="list-deal__item"><img width="370" src="./images/img1.jpg" alt="Человек набирает код на клавиатуре">
                             <div class="list-deal__box">
@@ -190,17 +193,16 @@
                                 <h3 class="list-deal__text">Дизайнерські рішення</h3>
                             </div>
                         </li>
-                    </ul>
+                    </ul>                
                 
-                </div>
             </div>
         </section> 
         
 
         <!-- Наша команда -->
-        <section class="section team--bgcolor">
+        <section class="section team-bgcolor">
             <div class="container">
-                <h2 class="team__title team-title">Наша команда</h2>
+                <h2 class="team-title">Наша команда</h2>
                 <ul class="list list-team">
                     <li class="list-team__item">
                         <img width="270" src="./images/img4.jpg" alt="Фото Ігора Дем'яненко">
@@ -209,7 +211,7 @@
                         <ul class="list list-icon">
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
@@ -217,7 +219,7 @@
                             
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
@@ -225,7 +227,7 @@
 
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
@@ -233,7 +235,7 @@
 
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -247,7 +249,7 @@
                         <ul class="list list-icon">
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
@@ -255,7 +257,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
@@ -263,7 +265,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
@@ -271,7 +273,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -285,7 +287,7 @@
                         <ul class="list list-icon">
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
@@ -293,7 +295,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
@@ -301,7 +303,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
@@ -309,7 +311,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -323,7 +325,7 @@
                         <ul class="list list-icon">
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
@@ -331,7 +333,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
@@ -339,7 +341,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
@@ -347,7 +349,7 @@
                         
                             <li>
                                 <a href="" class="list-icon__link">
-                                    <svg class="list-icon__icon" width="20" height="20">
+                                    <svg class="list-icon__img" width="20" height="20">
                                         <use href="./images/icons.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -430,7 +432,7 @@
             <address class="contact">
                 <a class="logo" href="/">Web<span class="logo__footer">Studio</span></a>
                 <p class="contact__address">м. Київ, пр-т Лесі Українки, 26</p>
-                <ul class="list site-connect connect-footer">
+                <ul class="list  connect-footer">
                     <li class="connect-footer__item"><a href="mailto:info@devstudio.com" class="connect-footer__link">info@devstudio.com</a><br></li>
                     <li class="connect-footer__item"><a href="tel:+380961111111" class="connect-footer__link">+38 096 111 11 11</a></li>
                 </ul>
