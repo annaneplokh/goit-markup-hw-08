@@ -1,0 +1,282 @@
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 528px;
+    min-height: 581px;
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 4px;
+
+}
+
+.modal-button {
+    position: relative;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;    
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+    &:focus {
+            outline: none;    
+        }
+}
+
+.modal-button__icon {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+        .modal-button:hover &,
+        .modal-button:focus &{
+            fill: $accent-color;
+        }
+}
+
+ .modal-title {
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 1.15;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: $title-text-color;
+     margin: 0;
+     margin-bottom: 12px;
+ }
+
+ .form-modal {
+     display: flex;
+     flex-direction: column;
+
+     &__label {    
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: #757575;
+            margin-bottom: 4px;
+        }
+ }
+
+ .form-modal__box {
+     position: relative;
+ }
+
+ .form-modal__label {
+
+     font-size: 12px;
+     line-height: 1.17;
+     letter-spacing: 0.01em;
+     color: $primery-text-color;
+     margin-bottom: 4px;
+ }
+
+ .form-modal__input {
+     width: 448px;
+     height: 40px;
+     border-radius: 4px;
+     border-color: rgba(33, 33, 33, 0.2);
+     margin-bottom: 28px;
+     cursor: pointer;
+
+        &:focus {        
+                outline: none;
+            }
+
+ }
+
+.form-modal__input--effect {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 42px;
+    border-width: 1px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            border-color: $accent-color;
+        }
+
+}
+
+.modal-textarea {
+    width: 448px;
+    height: 120px;
+    border-color: rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+        
+                border-color: $accent-color;
+                outline: none;
+            }
+
+        &::placeholder {
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+}
+
+.checkbox-label {
+    display: inline-block;
+
+}
+
+.checkbox-label__input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+
+    &:checked+.checkbox-label__checked {
+            background-color: $accent-color;
+            border-color: $accent-color;
+            background-image: url(../images/icon-check.svg);
+            
+            background-size: contain;
+            background-origin: border-box;
+            background-repeat: no-repeat;
+        }
+}
+
+.checkbox-label__checked {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+
+}
+
+.checkbox-label__text {
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: $primery-text-color;
+    margin: 0;
+
+    padding-left: 8px;
+    display: inline-block;
+}
+
+.checkbox-label__link {
+    color: $accent-color;
+   
+}
+
+.icon-personblack {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    left: 15px;
+    top: 14px;
+    bottom: 14px;
+    fill: $title-text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .form-modal__input--effect:hover + &,
+        .form-modal__input--effect:focus + &{
+            fill: $accent-color;
+        }
+}
+
+.icon-phoneblack {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 15px;
+    top: 13.5px;
+    bottom: 13.5px;
+    fill: $title-text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .form-modal__input--effect:hover + &,
+        .form-modal__input--effect:focus + &{
+            fill: $accent-color;
+        }
+}
+
+.icon-emailblack {
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    left: 15px;
+    top: 14px;
+    bottom: 14px;
+    fill: $title-text-color;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        .form-modal__input--effect:hover + &,
+        .form-modal__input--effect:focus + &{
+            fill: $accent-color;
+        }
+}
+
+.modal-send {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-send__button {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: $accent-color;
+    border-color: $accent-color;
+    border-radius: 4px;
+    margin-top: 30px;
+    cursor: pointer;
+    padding: 10px 52px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+                background-color: #188CE8;
+                border-color: #188CE8;
+            }
+
+}
+
