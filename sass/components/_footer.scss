@@ -7,6 +7,11 @@
 .contact {
     font-style: normal;
 
+    @media (max-width:480px) {
+            margin-bottom: 60px;
+    
+        }
+
 }
 
 .contact__address {
@@ -54,10 +59,21 @@
 
 .box-footer {
     margin-left: 70px;
+
+        @media (max-width:480px) {
+                text-align: center;
+                margin-left: 0;
+                margin-bottom: 60px;
+            }
 }
 
 .footer-items {
     display: flex;
+
+    @media (max-width:480px) {
+            display: block;
+            text-align: center;
+        }
 }
 
 .box-footer__title {

@@ -6,11 +6,17 @@
     letter-spacing: 0.03em;
     color: $title-text-color;
     margin-bottom: 50px;
+    margin-top: 0px;
 }
 
 .list-team {
     display: flex;
     flex-wrap: wrap;
+
+        @media (max-width:480px) {
+               display: block;
+        
+            }
 }
 
 .list-team__item {
@@ -23,6 +29,18 @@
 
     &:last-child {
             margin-right: 0px;
+        }
+
+            @media (max-width:480px) {
+               width: 100%;
+            
+            }
+}
+
+.list-team__photo {
+    @media (max-width:480px) {
+            width: 100%;
+    
         }
 }
 

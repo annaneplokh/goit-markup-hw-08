@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
 
@@ -21,6 +21,22 @@
             
             <nav class="main-nav">
                 <a class="logo" href="/">Web<span class="logo__header">Studio</span></a>
+
+                <div>
+                    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <svg class="mobile-open" width="40" 
+                            height="40"
+                            aria-label="Переключатель мобильного меню">
+                            <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                            
+                        </svg>
+                    </button>
+
+                </div>
+
+             
+
+
 
                 <ul class="list site-nav" >
                         <li class="site-nav__item"><a href="/" class="site-nav__link site-nav__link--current">Студія</a></li>
@@ -205,10 +221,10 @@
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="list list-team">
                     <li class="list-team__item">
-                        <img width="270" src="./images/img4.jpg" alt="Фото Ігора Дем'яненко">
+                        <img class="list-team__photo" width="270" src="./images/img4.jpg" alt="Фото Ігора Дем'яненко">
                         <h3 class="list-team__name">Ігор Дем'яненко</h3>
                         <p class="list-team__prof">Product Designer</p>
-                        <ul class="list list-icon">
+                        <ul class="list list-icon team-item">
                             <li>
                                 <a href="" class="list-icon__link">
                                     <svg class="list-icon__img" width="20" height="20">
@@ -243,10 +259,10 @@
                         </ul>
                     </li>
                     <li class="list-team__item">
-                        <img width="270" src="./images/img5.jpg" alt="Фото Ольги Рєпіної">
+                        <img class="list-team__photo" width="270" src="./images/img5.jpg" alt="Фото Ольги Рєпіної">
                         <h3 class=" list-team__name">Ольга Рєпіна</h3>
                         <p class="list-team__prof">Frontend Developer</p>
-                        <ul class="list list-icon">
+                        <ul class="list list-icon team-item">
                             <li>
                                 <a href="" class="list-icon__link">
                                     <svg class="list-icon__img" width="20" height="20">
@@ -281,10 +297,10 @@
                         </ul>
                     </li>
                     <li class="list-team__item">
-                        <img width="270" src="./images/img6.jpg" alt="Фото Миколи Тарасова">
+                        <img class="list-team__photo" width="270" src="./images/img6.jpg" alt="Фото Миколи Тарасова">
                         <h3 class=" list-team__name">Микола Тарасов</h3>
                         <p class="list-team__prof">Marketing</p>
-                        <ul class="list list-icon">
+                        <ul class="list list-icon team-item">
                             <li>
                                 <a href="" class="list-icon__link">
                                     <svg class="list-icon__img" width="20" height="20">
@@ -319,10 +335,10 @@
                         </ul>
                     </li>
                     <li class="list-team__item">
-                        <img width="270" src="./images/img7.jpg" alt="Фото Михайла Єрмакова">
+                        <img class="list-team__photo" width="270" src="./images/img7.jpg" alt="Фото Михайла Єрмакова">
                         <h3 class=" list-team__name">Михайло Єрмаков</h3>
                         <p class="list-team__prof">UI Designer</p>
-                        <ul class="list list-icon">
+                        <ul class="list list-icon team-item">
                             <li>
                                 <a href="" class="list-icon__link">
                                     <svg class="list-icon__img" width="20" height="20">
@@ -490,8 +506,44 @@
         </div>
     </footer>
 
+    
+
+    <!-- mobile-menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40" class="mobile-close">
+                <use class="icon-close" href="./images/icons.svg#icon-close"></use>
+                        
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link mobile-menu__link--current ">Studio</a></li>
+            <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+            <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Contacts</a></li>
+            
+        </ul>
+
+        <ul class="mobile-connect">
+            <li class="mobile-connect__item"><a class="mobile-connect__link mobile-connect__link--current" href="tel:+12127724150">+1 212-772-4150</a></li>
+            <li class="mobile-connect__item"><a class="mobile-connect__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+
+        <ul class="mobile-social">
+            <li class="mobile-social__item"> <a class="mobile-social__link" href="">Instagram</a></li>
+            <li class="mobile-social__item"> <a class="mobile-social__link" href="">Twitter</a></li>
+            <li class="mobile-social__item"> <a class="mobile-social__link" href="">Twitter</a></li>
+            <li class="mobile-social__item"> <a class="mobile-social__link" href="">LinkedIn</a></li>
+
+        </ul>
+        </div>
+
+
+
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 
 
 </body>

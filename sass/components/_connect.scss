@@ -7,6 +7,10 @@
     display: flex;
     margin-left: auto;
 
+    @media screen and (max-width:480px) {
+            display: none;
+        }
+
 }
 
 .site-connect__item {

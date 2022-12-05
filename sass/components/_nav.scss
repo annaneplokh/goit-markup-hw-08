@@ -1,12 +1,37 @@
+//  @media screen and (max-width:480px) {
+//     .site-nav {
+//      display: none;
+//  }}
+
+
 .main{
     background-color: $white-bg-color;
     border-bottom: 1px solid #ECECEC;
+
+     @media screen and (max-width:480px) {
+            max-width: 480px;
+            height: 60px;
+            
+                
+            }
 
 }
 
 .main-nav {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width:480px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+        
+    
+    
+        }
+
+   
 }
 
 .site-nav{
@@ -16,6 +41,10 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width:480px) {
+            display: none;
+        }
        
 }
 

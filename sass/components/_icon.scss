@@ -2,7 +2,23 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+
+        @media (max-width:480px) {
+                margin-bottom: 0;                
+        
+            }
+
+
+    }
+
+.team-item{
+    @media (max-width:480px) {
+            padding-bottom: 24px;
+    
+        }
 }
+
+
 
 .list-icon__link {
     width: 44px;
@@ -19,6 +35,11 @@
             background-color: $accent-color;
             outline: none;
         }
+
+                        @media (max-width:480px) {
+                            // margin-bottom: 24px;
+            
+                        }
 }
 
 .list-icon__img {
@@ -33,4 +54,5 @@
 
 .list-icon__footer {
     fill: #FFFFFF;
+    margin-bottom: 0;
 }

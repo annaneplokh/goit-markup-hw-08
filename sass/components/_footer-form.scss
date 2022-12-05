@@ -1,12 +1,23 @@
 .form {
     display: flex;
 
+    @media (max-width:480px) {
+            display: block;
+            
+        }
+
 }
 
 .form__field {
     display: flex;
     flex-direction: column;
     margin-left: 93px;
+
+        @media (max-width:480px) {           
+                margin-left: auto;
+                
+            }
+
 }
 
 .form__text {
@@ -18,6 +29,8 @@
 
     text-transform: uppercase;
     padding-bottom: 20px;
+
+
 
 }
 
@@ -41,6 +54,16 @@
             letter-spacing: 0.03em; 
         
         }
+
+                 @media (max-width:480px) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                     
+                    
+        
+                 }
+
+                    
 }
 
 .form-button {
@@ -67,6 +90,11 @@
                 background-color: #188CE8;
                 border-color: #188CE8;
             }
+
+                         @media (max-width:480px) {
+                             margin-top: 0;
+            
+                         }
 
 }
 
