@@ -352,12 +352,28 @@ body {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img19.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mobile.jpg);
   background-color: #C4C4C4;
+  min-width: 480px;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 118px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero .hero {
-    background-image: url(../images/img19x2.jpg);
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-mobile2x.jpg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tablet.jpg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-tablet2x.jpg);
   }
 }
 @media (min-width: 1200px) {
@@ -366,26 +382,12 @@ body {
     padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-desktop.jpg);
   }
 }
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    min-width: 480px;
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 118px;
-  }
-}
-@media (max-width: 767px) {
-  .hero {
-    min-width: 480px;
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Header-desktop2x.jpg);
   }
 }
 
