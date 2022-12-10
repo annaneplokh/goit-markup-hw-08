@@ -6,9 +6,21 @@ body{
 
 .container {
     margin: 0 auto;
-    max-width: 1200px;
+    // max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media (max-width:767px){
+        width: 480px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px){
+        width: 768px;
+    }
+
+         @media (min-width:1200px){
+            width: 1200px;
+         }
 
 }
 
@@ -21,8 +33,14 @@ body{
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+  
+            @media (min-width: 1200px) {
+                    padding-top: 94px;
+                    padding-bottom: 94px;
+                } 
 
 
 }

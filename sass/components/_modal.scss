@@ -24,11 +24,19 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 528px;
+    width: 528px;
     min-height: 581px;
     background-color: #FFFFFF;
     padding: 40px;
     border-radius: 4px;
+
+        @media (max-width:1199px){
+            width: 450px;
+            height: 609px;
+            top: 55%;
+            left: 50%;
+            overflow-y: scroll;
+        }
 
 
 }
@@ -107,6 +115,10 @@
                 outline: none;
             }
 
+            @media (max-width:1199px){
+                width: 100%;
+            }
+
 
  }
 
@@ -150,10 +162,15 @@
             color: rgba(117, 117, 117, 0.5);
         }
 
+                 @media (max-width:1199px) {
+                     width: 100%;
+                 }
+
 }
 
 .checkbox-label {
     display: inline-block;
+   
 
 }
 
@@ -172,6 +189,8 @@
             background-origin: border-box;
             background-repeat: no-repeat;
         }
+
+                                      
 }
 
 .checkbox-label__checked {
@@ -191,6 +210,11 @@
 
     padding-left: 8px;
     display: inline-block;
+
+                @media (max-width:1199px) {
+                    font-size: 12px;
+                    line-height: 1.17;
+                    }
 }
 
 .checkbox-label__link {

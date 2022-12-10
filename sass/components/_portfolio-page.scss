@@ -9,6 +9,11 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    @media (max-width:767px){
+        justify-content: flex-start;
+    }
+
+
 }
 
 .button-portfolio__filter {
@@ -22,6 +27,18 @@
     &:last-child {
             margin-right: 0px;
         }
+
+                        @media (max-width:767px) {
+                            justify-content: flex-start;
+                        }
+
+                                @media (max-width:767px) {
+                                    margin-bottom: 21px;
+
+                                        &:last-child {
+                                                margin-bottom: 0px;
+                                            }
+                                }
 
 }
 
@@ -75,11 +92,19 @@
     height: 294px;
     overflow: hidden;
 
+    @media (max-width:767px) {
+            width: 450px;
+    
+        }
 
 }
 
 .portfolio-img__card{
     width: 100%;
+            @media (max-width:767px) {
+                    width: 450px;
+            
+                }
 }
 
 .portfolio-img__box {
@@ -111,6 +136,11 @@
 .list-projects {
     display: flex;
     flex-wrap: wrap;
+
+        @media (max-width:767px){
+            display: block;        
+            
+        }
    
 }
 
@@ -136,7 +166,18 @@
         margin-bottom: 0px;
     }
 
+                    @media (max-width:767px) {
+                        width: 450px;
+                       margin-bottom: 30px;
+                        &:last-child {
+                                margin-bottom: 0px;
+                            }
+                        
+                        }
+
 }
+
+
 
 .portfolio-box {
     width: 300px;
@@ -160,6 +201,7 @@
 
 .portfolio-card {
     text-decoration: none;
+ 
 }
 
 .portfolio-box__text {

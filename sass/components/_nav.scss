@@ -1,11 +1,24 @@
 .main{
     background-color: $white-bg-color;
     border-bottom: 1px solid #ECECEC;
+
+    @media screen and (max-width:767px) {
+        height: 60px;
+    }
+
+         @media (min-width: 768px) and (max-width: 1199px){
+            height: 80px;
+         }
 }
 
 .main-nav {
     display: flex;
-    align-items: center;   
+    align-items: center; 
+    
+    @media (max-width:767px){
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .site-nav{
@@ -15,6 +28,11 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+        @media (max-width:767px) {
+                display: none;
+                
+            }
        
 }
 
@@ -59,3 +77,25 @@
     
         }
  }
+
+//  .menu-button{
+//     // margin-top: 10px;
+//     display: inline-flex;
+//     margin: 0;
+//     padding: 0;
+//     border: none;
+//     background-color: transparent;
+//     margin-top: 10px;
+//  }
+
+//   .menu-button .icon-close{
+//     display: none;
+//  }
+
+//  .menu-button.is-open .icon-close {
+//     display: block;
+//  }
+
+//   .menu-button.is-open .icon-menu {
+//       display: none;
+//   }
