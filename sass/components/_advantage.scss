@@ -44,7 +44,9 @@
 }
 
 .list-advantage {
-    
+    @media (max-width:767px){
+            width: 480px;
+        }
 
     @media (min-width:768px){
         display: flex;
@@ -52,9 +54,7 @@
 
     }
 
-        @media (max-width:767px){
-            width: 480px;
-        }
+      
 
 
 
@@ -72,11 +72,7 @@
                 width: 354px;
                 &:nth-child(odd){
                     margin-right: 30px;
-                }
-                    
-                    // &:last-child {
-                    //     margin-right: 0px;
-                    //     }               
+                }            
                 }
 
 

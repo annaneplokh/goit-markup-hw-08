@@ -408,14 +408,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-@media (max-width: 767px) {
-  .hero-block__title {
-    font-size: 26px;
-    line-height: 1.62;
-    max-width: 360px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .hero-block__title {
     font-size: 26px;
     line-height: 1.62;
@@ -764,15 +757,15 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .list-advantage {
+    width: 480px;
+  }
+}
 @media (min-width: 768px) {
   .list-advantage {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-@media (max-width: 767px) {
-  .list-advantage {
-    width: 480px;
   }
 }
 
@@ -1194,15 +1187,15 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
-  .form {
-    display: flex;
-  }
-}
 @media (min-width: 768px) and (max-width: 1199px) {
   .form {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .form {
+    display: flex;
   }
 }
 
@@ -1231,7 +1224,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-width: 358px;
+  width: 358px;
   height: 50px;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1275,7 +1268,6 @@ body {
   color: #FFFFFF;
   border-color: #2196F3;
   border-radius: 4px;
-  vertical-align: middle;
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
